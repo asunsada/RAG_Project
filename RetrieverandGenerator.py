@@ -34,11 +34,9 @@ def main():
     query_text = args.query_text
 
     # Prepare the DB.
-    #Asun
-    openai.api_key = os.getenv('OPENAI_API_KEY')
-    print(openai.api_key)
-    #Asun
-    embedding_function = OpenAIEmbeddings(openai_api_type=openai.api_key)
+
+    openai.api_key = o# Get your OPENAI KEY
+    embedding_function = OpenAIEmbeddings(openai_api_type=o# Get your OPENAI KEY)
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB. k=5 to show 5 results in a tuple, the text and the relevance score
