@@ -122,8 +122,10 @@ print(document.metadata)
 
 # STORING #######     CHROMA DB Create a new DB from the documents.
 print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
-openai.api_key = os.getenv('OPENAI_API_KEY')
-print(openai.api_key)
+
+# Get your OPENAI KEY
+
+
 
 
 # Delete the data in the ChromaDB.  Create a new DB from the documents.
@@ -138,12 +140,12 @@ else:
     print(f"The '{database_name}' database does not exist, so we create it.")
 
 # load it into Chroma the embeddings. PLease note you need to have your OPEN AI KEY SET UP as an env variable.
-db = Chroma.from_documents(chunks, OpenAIEmbeddings(openai_api_type=openai.api_key), persist_directory=CHROMA_PATH)
+db = Chroma.from_documents(chunks, OpenAIEmbeddings(openai_api_type=# Get your OPENAI KEY ), persist_directory=CHROMA_PATH)
 db.persist()
 print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
 
 # The embeddings
-embeddings = OpenAIEmbeddings(openai_api_key = openai.api_key)
+embeddings = OpenAIEmbeddings(openai_api_key = # Get your OPENAI KEY)
 embeddings_result = embeddings.embed_documents(text)
 print("Total Embeddings:", len(embeddings_result))
 
