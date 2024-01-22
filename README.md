@@ -2,9 +2,7 @@ Langchain RAG_Project
 
 This is a sample project of RAG (Retrieval Augmented Generation as a Service)
 
-Please note I am not a professional developer. I just love tech.
-
-Thank you to all those people who are sharing their knowledge openly in different media.
+I want to clarify that I'm not a professional developer; I simply have a passion for technology. A big thank you to all those individuals who generously share their knowledge across various media platforms.
 
 Please note you will need to Install dependencies. Depending on your system and set up, you will need to install different packages.
 As you run and debug your code, you will be able to learn which ones.
