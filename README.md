@@ -20,6 +20,6 @@ Query the Chroma DB. Retrieve the relevant Domain data chunks, enhance the promo
 and generate the answer 
 
 ```python
-python query_data.py "How do the different AI strategies of Cisco, Amazon, Alphabet and Meta compare?"
+python RetrieverandGenerator.py "How do the different AI strategies of Cisco, Amazon, Alphabet and Meta compare?"
 ```
 
